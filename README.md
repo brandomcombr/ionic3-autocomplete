@@ -102,6 +102,9 @@ File .scss
 }
 ```
 ---
+## Demo
 
+![Demo](https://raw.githubusercontent.com/brandomcombr/ionic3-autocomplete/master/img-autocomplete.png)
 
+---
 ##### [markdown-it demo](https://markdown-it.github.io/)
