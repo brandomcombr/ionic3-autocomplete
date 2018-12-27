@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic3 autocomplete
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Input autocomplete List of countries South America</h3>
+  
+  <ion-list>
+    <div class="autocomplete">
+      <ion-item>
+        <ion-label floating>Country</ion-label>
+        <ion-input  type="text" 
+                    [(ngModel)]="input"
+                    (ionChange)="search()"
+                    (ionBlur)="removeFocus()"
+                    debounce=500></ion-input>
+      </ion-item>
+      <ion-list>
+        <ion-item *ngFor="let country of countries" (click)="add(country)">
+          {{country}}
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-list>
+</ion-content>
